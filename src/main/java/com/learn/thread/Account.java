@@ -7,6 +7,7 @@ public class Account {
     //余额
     private int balance;
 
+    // 基础封装转账方法（未加锁）
     void transferBasic(Account target, int amt) {
         if (this.balance > amt) {
             this.balance -= amt;
