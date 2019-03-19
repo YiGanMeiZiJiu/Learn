@@ -28,11 +28,12 @@ public class BlockQueue<T> {
         lock.lock();
         // 队列不满
         try {
-            while (queue.size() >= length)
+            while (queue.size() >= length) {
                 /**
                  * 此时队列已满，所以队列不满的条件变量不满足，进入等待
                  */
                 notFull.await();
+            }
             // 入队
             queue.add(new Object());
             // 入队之后通知队列不空的条件变量的等待队列，可以出队了
@@ -49,11 +50,12 @@ public class BlockQueue<T> {
         lock.lock();
         // 队列不空
         try {
-            while (queue.size() == 0)
+            while (queue.size() == 0) {
                 /**
                  * 此时队列是空的，不满足队列不空条件变量，不执行出队，线程进入队列不空 等待队列中
                  */
                 notEmpty.await();
+            }
             // 出队操作
             queue.remove(new Object());
             // 通知队列不满的等待队列，可以入队了
