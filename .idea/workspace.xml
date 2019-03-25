@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1844294-0d04-4748-b561-445bbab5f033" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/classLoading/ConstClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/classLoading/NotInitialization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/classLoading/SubClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learn/classLoading/SuperClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d1844294-0d04-4748-b561-445bbab5f033" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,8 +62,8 @@
       <file leaf-file-name="NotInitialization.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/classLoading/NotInitialization.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="476">
+              <caret line="28" column="11" lean-forward="true" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -382,7 +376,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24605000" />
+    <option name="totallyTimeSpent" value="25381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1624" y="-93" width="1686" height="814" extended-state="0" />
@@ -398,7 +392,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32972974" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -810,8 +804,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/classLoading/NotInitialization.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        <state relative-caret-position="476">
+          <caret line="28" column="11" lean-forward="true" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
         </state>
       </provider>
     </entry>
