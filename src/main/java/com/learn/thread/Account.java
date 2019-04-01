@@ -1,11 +1,16 @@
 package com.learn.thread;
 
+/**
+ * 锁应该是私有的，不可变的，不可重用的
+ */
 public class Account {
 
     //账户id
     private long id;
     //余额
     private int balance;
+    //密码
+    private String password;
 
     // 基础封装转账方法（未加锁）
     void transferBasic(Account target, int amt) {
@@ -67,6 +72,27 @@ public class Account {
             synchronized (last) {
                 transferBasic(target, amt);
             }
+        }
+    }
+
+    /**
+     * 错误的上锁方式
+     * 锁住的如果是Integer和String类型的对象是不行的，如果锁住的Integer或者String发生变化，就不能互斥
+     * 而且Integer String Boolean是可重用的，意味着别人可能拿着你的锁，你可能永远拿不到锁
+     */
+    // 取款
+//    void withdraw(Integer amt) {
+//        synchronized (balance) {
+//            if (this.balance > amt) {
+//                this.balance -= amt;
+//            }
+//        }
+//    }
+
+    //更改密码
+    void updatePassword(String pwd) {
+        synchronized (pwd) {
+            this.password = pwd;
         }
     }
 
