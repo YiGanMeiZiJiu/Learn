@@ -1,5 +1,10 @@
 package com.learn.thread;
 
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+import static java.util.concurrent.TimeUnit.NANOSECONDS;
+
 /**
  * 锁应该是私有的，不可变的，不可重用的
  */
@@ -93,6 +98,60 @@ public class Account {
     void updatePassword(String pwd) {
         synchronized (pwd) {
             this.password = pwd;
+        }
+    }
+
+
+    /**
+     * 尝试使用SDK并发包中的可重入锁
+     * tryLock支持非阻塞方式拿锁
+     * 下面的方法不会出现死锁，但有可能活锁
+     */
+    private final Lock lock = new ReentrantLock(false);
+
+    void transferByLock(Account tar, int amt) {
+        while (true) {
+            if (this.lock.tryLock()) {
+                try {
+                    if (tar.lock.tryLock()) {
+                        try {
+                            this.balance -= amt;
+                            tar.balance += amt;
+                        } finally {
+                            tar.lock.unlock();
+                        }
+                    }
+                } finally {
+                    this.lock.unlock();
+                }
+            }
+        }
+    }
+
+    /**
+     * 对上面转账方法的优化，加入转账成功后退出循环和线程随机等待时间，避免活锁
+     * @param tar
+     * @param amt
+     * @throws InterruptedException
+     */
+    void transferByLockOptimize(Account tar, int amt) throws InterruptedException {
+        boolean check = true;
+        while (check) {
+            if (this.lock.tryLock((long)(1+Math.random()*(30-1+1)),NANOSECONDS)) {
+                try {
+                    if (tar.lock.tryLock((long)(1+Math.random()*(30-1+1)),NANOSECONDS)) {
+                        try {
+                            this.balance -= amt;
+                            tar.balance += amt;
+                            check = false;
+                        } finally {
+                            tar.lock.unlock();
+                        }
+                    }
+                } finally {
+                    this.lock.unlock();
+                }
+            }
         }
     }
 

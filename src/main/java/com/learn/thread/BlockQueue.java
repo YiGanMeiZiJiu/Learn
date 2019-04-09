@@ -37,7 +37,7 @@ public class BlockQueue<T> {
             // 入队
             queue.add(new Object());
             // 入队之后通知队列不空的条件变量的等待队列，可以出队了
-            notEmpty.notify();
+            notEmpty.signal();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -59,7 +59,7 @@ public class BlockQueue<T> {
             // 出队操作
             queue.remove(new Object());
             // 通知队列不满的等待队列，可以入队了
-            notFull.notify();
+            notFull.signal();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
