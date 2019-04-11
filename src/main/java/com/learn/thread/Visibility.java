@@ -15,7 +15,7 @@ public class Visibility {
 
     public static long calc() throws InterruptedException {
         final Visibility visibility = new Visibility();
-        // 创建三个线程，执行add操作
+        // 创建2个线程，执行add操作
         Thread thread1 = new Thread(() -> {
             visibility.add10K();
         });
