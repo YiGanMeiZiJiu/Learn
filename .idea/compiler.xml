@@ -9,5 +9,8 @@
         <module name="Thread" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Thread" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

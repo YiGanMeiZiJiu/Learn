@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1844294-0d04-4748-b561-445bbab5f033" name="Default" comment="" />
+    <list default="true" id="d1844294-0d04-4748-b561-445bbab5f033" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/classLoading/ConstClass.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/classLoading/FieldResolution$InterFace0.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/classLoading/FieldResolution$Interface1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/classLoading/FieldResolution$Interface2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/classLoading/FieldResolution$Parent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/classLoading/FieldResolution$Sub.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/classLoading/FieldResolution.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/classLoading/NotInitialization.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/classLoading/SubClass.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/classLoading/SuperClass.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/designMode/Main.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/designMode/factory/MailSender.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/designMode/factory/Provider.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/designMode/factory/SendMailFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/designMode/factory/SendSmsFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/designMode/factory/Sender.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/designMode/factory/SenderFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/designMode/factory/SmsSender.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/designMode/proxy/Proxy.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/designMode/proxy/RealSubject.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/designMode/proxy/Subject.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/designMode/singleCase/Singleton.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/sort/BubbleSort.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/sort/FastSort.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/thread/Account.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/thread/Allocator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/thread/BlockQueue.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/learn/thread/Visibility.class" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -149,7 +179,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="640" />
     <option name="y" value="8" />
     <option name="width" value="1946" />
@@ -449,15 +479,15 @@
       <workItem from="1553175429480" duration="683000" />
       <workItem from="1554122761901" duration="1564000" />
       <workItem from="1554779436907" duration="11080000" />
-      <workItem from="1555254173468" duration="17000" />
+      <workItem from="1555254173468" duration="196000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37949000" />
+    <option name="totallyTimeSpent" value="38128000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -563,7 +593,7 @@
         <state relative-caret-position="309">
           <caret line="60" column="19" lean-forward="true" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -580,7 +610,7 @@
         <state relative-caret-position="374">
           <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -747,7 +777,7 @@
         <state relative-caret-position="969">
           <caret line="58" column="15" lean-forward="false" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
