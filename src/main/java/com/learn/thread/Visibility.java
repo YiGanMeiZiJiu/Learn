@@ -32,7 +32,20 @@ public class Visibility {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        System.out.println(calc());
+//        System.out.println(calc());
+        String a = new String("q");
+        String b = new String("q");
+        String c = "q";
+        String d = "q";
+        if (a == c) {
+            System.out.println("12312");
+        }
+        if (a == b) {
+            System.out.println("dengyu");
+        }
+        if (a.equals(b)) {
+            System.out.println("111");
+        }
     }
 
 }
