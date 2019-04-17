@@ -6,12 +6,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-/**
- * 利用读写锁实现一个简单的缓存
- * @param <K>
- * @param <V>
- */
-public class Cache<K, V> {
+public class LazyCache<K, V> {
 
     final Map<K, V> m = new HashMap<>();
 
@@ -23,24 +18,38 @@ public class Cache<K, V> {
     // 写锁
     final Lock write = readWriteLock.writeLock();
 
-    // 读缓存
+    /**
+     * 懒加载的缓存方法
+     */
+
     V get(K key) {
+        V v = null;
+        // 读缓存
         read.lock();
         try {
-            return m.get(key);
+            v = m.get(key);
         } finally {
             read.unlock();
         }
-    }
-
-    // 写缓存
-    V put(K key, V v) {
+        // 缓存中存在,返回
+        if (v != null) {
+            return v;
+        }
+        // 缓存中不存在，查询数据库
         write.lock();
         try {
-            return m.put(key, v);
+            // 再次验证
+            // 其他线程可能已经查询过数据库
+            v = m.get(key);
+            if (v == null) {
+                // 查询数据库
+                //v = "查询代码"
+                m.put(key, v);
+            }
         } finally {
             write.unlock();
         }
+        return v;
     }
 
 }
