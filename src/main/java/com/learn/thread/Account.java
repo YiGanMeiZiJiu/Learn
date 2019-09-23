@@ -17,6 +17,34 @@ public class Account {
     //密码
     private String password;
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Lock getLock() {
+        return lock;
+    }
+
     // 基础封装转账方法（未加锁）
     void transferBasic(Account target, int amt) {
         if (this.balance > amt) {

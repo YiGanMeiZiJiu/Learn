@@ -2,3 +2,6 @@
 /.idea/workspace.xml
 /Thread.iml
 /.idea/artifacts/Thread_war_exploded.xml
+Future$T2Task.class
+*.class
+/target/classes/com/learn/test/CoordinateTransformUtil.class

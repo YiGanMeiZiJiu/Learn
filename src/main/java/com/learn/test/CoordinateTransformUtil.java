@@ -167,7 +167,7 @@ public class CoordinateTransformUtil {
     }
 
     public static void main(String[] args) {
-        for (Double a : gcj02towgs84(120.13844,30.264434)) {
+        for (Double a : gcj02towgs84(120.082212,30.30969)) {
             System.out.println(a);
         }
     }
