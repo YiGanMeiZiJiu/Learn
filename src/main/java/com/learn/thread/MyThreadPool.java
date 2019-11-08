@@ -23,7 +23,7 @@ public class MyThreadPool {
         // 创建工作线程
         for (int idx = 0; idx < poolSize; idx++) {
             WorkerThread work = new WorkerThread();
-//            work.start();
+            work.start();
             threads.add(work);
         }
     }
