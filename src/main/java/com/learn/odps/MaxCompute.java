@@ -21,7 +21,7 @@ public class MaxCompute {
      * 单例获得Odps对象
      * @return
      */
-    private static Odps getOdps() {
+    public static Odps getOdps() {
         if (odps == null) {
             synchronized (MaxCompute.class) {
                 if (odps == null) {
