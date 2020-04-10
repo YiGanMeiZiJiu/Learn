@@ -1,7 +1,7 @@
 package com.learn.thread;
 
 import com.sun.xml.internal.ws.util.CompletedFuture;
-import org.junit.Test;
+//import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +45,7 @@ public class BatchExecuteTask {
     /*
     异步询价，同步保存
      */
-    @Test
+    //@Test
     public void test1() throws ExecutionException, InterruptedException {
         ExecutorService executorService = Executors.newFixedThreadPool(3);
         // 异步开始询价
@@ -66,7 +66,7 @@ public class BatchExecuteTask {
     /*
     异步询价，创建阻塞队列同步保存
      */
-    @Test
+    //@Test
     public void test2() throws ExecutionException, InterruptedException {
         ExecutorService executorService = Executors.newFixedThreadPool(3);
         BlockingQueue<Integer> queue = new LinkedBlockingDeque<>();
@@ -114,7 +114,7 @@ public class BatchExecuteTask {
     /*
     异步询价，异步保存
      */
-    @Test
+    //@Test
     public void test3() throws ExecutionException, InterruptedException {
         // 创建线程池
         ExecutorService executorService = Executors.newFixedThreadPool(3);
@@ -135,7 +135,7 @@ public class BatchExecuteTask {
     /*
     利用CompletionService快速实现一个简单的Forking Cluster
      */
-    @Test
+    //@Test
     public void test4() throws ExecutionException, InterruptedException {
         ExecutorService executorService = Executors.newFixedThreadPool(3);
         CompletionService<Integer> completionService = new ExecutorCompletionService<>(executorService);

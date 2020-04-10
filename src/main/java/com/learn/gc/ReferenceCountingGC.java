@@ -1,6 +1,6 @@
 package com.learn.gc;
 
-import org.junit.Test;
+//import org.junit.Test;
 
 /**
  * testGC() 执行之后，objA和objB会不会被GC呢？
@@ -13,7 +13,7 @@ public class ReferenceCountingGC {
 
     private byte[] bigSize = new byte[2 * _1MB];
 
-    @Test
+    //@Test
     public void testGC() {
         ReferenceCountingGC objA = new ReferenceCountingGC();
         ReferenceCountingGC objB = new ReferenceCountingGC();

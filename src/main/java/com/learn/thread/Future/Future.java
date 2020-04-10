@@ -1,7 +1,7 @@
-package com.learn.thread;
+package com.learn.thread.Future;
 
 import javafx.concurrent.Task;
-import org.junit.Test;
+////import org.junit.Test;
 
 import java.util.concurrent.*;
 
@@ -10,7 +10,7 @@ import java.util.concurrent.*;
  */
 public class Future {
 
-    @Test
+//    //@Test
     public void makeTea() throws ExecutionException, InterruptedException {
         /**
          * 烧水泡茶

@@ -1,7 +1,7 @@
 package com.learn.thread;
 
 import com.sun.scenario.effect.Merge;
-import org.junit.Test;
+//import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.concurrent.ForkJoinPool;
@@ -9,7 +9,7 @@ import java.util.concurrent.RecursiveTask;
 
 public class TestMergeSort {
 
-    @Test
+    //@Test
     public void mergeSort() {
         long[] arrs = new long[1000000];
         for (int i = 0; i < 1000000; i++) {
